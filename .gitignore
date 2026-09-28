@@ -3,11 +3,6 @@ node_modules/
 # Any package `dist/` (includes backend TypeScript output)
 dist/
 coverage/
-.env
-.env.staging
-.env.production
-.env.local
-.vscode/
 *.log
 backend/lint-output.txt
 
@@ -23,3 +18,7 @@ gitleaks-report.sarif
 .kiro/specs/avatar-component/tasks.md
 
 .kiro/
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+config.bat
