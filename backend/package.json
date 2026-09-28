@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "tsx src/index.ts",
-    "build": "npx prisma generate && tsc -p tsconfig.json",
-    "start": "node dist/index.js",
+    "dev": "node api.js && tsx src/index.ts",
+    "build": "node api.js && npx prisma generate && tsc -p tsconfig.json",
+    "start": "node api.js && node dist/index.js",
     "test": "jest --config jest.config.js --forceExit --detectOpenHandles",
     "lint": "eslint src/",
     "postinstall": "npx prisma generate",
